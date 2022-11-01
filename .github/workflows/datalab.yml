@@ -30,6 +30,7 @@ jobs:
     - name: Execute Codes
       run: |
         set -x
+        HEAD:.github/workflows/datalab.yml
         cd ./lab2/datalab-handout
         make
         ./btest -T 50
